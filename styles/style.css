@@ -581,3 +581,20 @@ body {
 .popup-black.show {
     transform: translate(-50%, -50%) scale(1);
 }
+
+.signature {
+    position: fixed;
+    bottom: 12px;
+    right: 16px;
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    font-family: 'SuperCrawler', sans-serif; /* 如果你想用你的艺术字体 */
+    letter-spacing: 0.05em;
+    animation: signatureFade 3s ease-in-out infinite alternate;
+}
+
+/* 轻微闪烁呼吸效果 */
+@keyframes signatureFade {
+    from { opacity: 0.5; }
+    to   { opacity: 1; }
+}
